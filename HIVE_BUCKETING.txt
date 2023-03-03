@@ -1,0 +1,33 @@
+-- Create table with bucketing
+CREATE TABLE my_table (
+  id INT,
+  name STRING,
+  age INT
+)
+CLUSTERED BY (id) INTO 4 BUCKETS
+STORED AS ORC;
+
+-- Load data into the table
+LOAD DATA INPATH 'path/to/data' INTO TABLE my_table;
+
+-- Query the table using bucketing
+SELECT * FROM my_table WHERE id = 1;
+
+
+
+-- Create table with partitioning
+CREATE TABLE my_table (
+  id INT,
+  name STRING,
+  age INT
+)
+PARTITIONED BY (year INT, month INT)
+STORED AS ORC;
+
+-- Load data into the table
+INSERT INTO my_table PARTITION (year=2022, month=3)
+SELECT id, name, age FROM source_table WHERE year=2022 AND month=3;
+
+-- Query the table using partitioning
+SELECT * FROM my_table WHERE year=2022 AND month=3;
+
