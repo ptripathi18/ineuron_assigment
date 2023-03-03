@@ -1,0 +1,23 @@
+1) b. S[2:6]
+2) d. 729
+3) d. 0
+4) d. Error
+5) c. y
+6) b. 6
+7) c. Sets are immutable
+8). c. 1 ['Raj', 22], 2 ['Simran', 21], 3 ['Rahul', 40]
+9). [word for sentence in paragraph for word in sentence.split()]
+
+10). What will be the output of this code?
+
+a. [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+b. [9, 8, 7, 6, 5, 4, 3, 2]
+c. [9, 8, 7, 6, 5, 4, 3, 2, 1]
+d. [10, 9, 8, 7, 6, 5, 4, 3, 2]
+c. [9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+
+
+
+
+
